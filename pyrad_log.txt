@@ -1,0 +1,248 @@
+INFO:radiomics.batch: pyradiomics version: 0+unknown
+INFO:radiomics.batch: Loading CSV
+INFO:radiomics.batch: Loading Done
+INFO:radiomics.batch: Patients: 3
+INFO:radiomics.featureextractor: Loading parameter file exampleSettings\Params.yaml
+INFO:radiomics.batch: Enabled input images types: {'Original': {}, 'Wavelet': {'wavelet': 'rbio1.1', 'binWidth': 10}}
+INFO:radiomics.batch: Enabled features: {'shape': ['VoxelVolume', 'MeshVolume', 'SurfaceArea', 'SurfaceVolumeRatio', 'Compactness1', 'Compactness2', 'Sphericity', 'SphericalDisproportion', 'Maximum3DDiameter', 'Maximum2DDiameterSlice', 'Maximum2DDiameterColumn', 'Maximum2DDiameterRow', 'MajorAxisLength', 'MinorAxisLength', 'LeastAxisLength', 'Elongation', 'Flatness'], 'firstorder': ['Mean', '10Percentile', '90Percentile', 'Energy', 'Entropy', 'InterquartileRange', 'Kurtosis', 'Maximum', 'MeanAbsoluteDeviation', 'Median', 'Minimum', 'Range', 'RobustMeanAbsoluteDeviation', 'RootMeanSquared', 'Skewness', 'TotalEnergy', 'Uniformity', 'Variance'], 'glcm': ['Autocorrelation', 'JointAverage', 'ClusterProminence', 'ClusterShade', 'ClusterTendency', 'Contrast', 'Correlation', 'DifferenceAverage', 'DifferenceEntropy', 'DifferenceVariance', 'JointEnergy', 'JointEntropy', 'Imc1', 'Imc2', 'Idm', 'Idmn', 'Id', 'Idn', 'InverseVariance', 'MaximumProbability', 'SumEntropy', 'SumSquares'], 'glrlm': ['GrayLevelNonUniformity', 'GrayLevelNonUniformityNormalized', 'GrayLevelVariance', 'HighGrayLevelRunEmphasis', 'LongRunEmphasis', 'LongRunHighGrayLevelEmphasis', 'LongRunLowGrayLevelEmphasis', 'LowGrayLevelRunEmphasis', 'RunEntropy', 'RunLengthNonUniformity', 'RunLengthNonUniformityNormalized', 'RunPercentage', 'RunVariance', 'ShortRunEmphasis', 'ShortRunHighGrayLevelEmphasis', 'ShortRunLowGrayLevelEmphasis'], 'glszm': ['GrayLevelNonUniformity', 'GrayLevelNonUniformityNormalized', 'GrayLevelVariance', 'HighGrayLevelZoneEmphasis', 'LargeAreaEmphasis', 'LargeAreaHighGrayLevelEmphasis', 'LargeAreaLowGrayLevelEmphasis', 'LowGrayLevelZoneEmphasis', 'SizeZoneNonUniformity', 'SizeZoneNonUniformityNormalized', 'SmallAreaEmphasis', 'SmallAreaHighGrayLevelEmphasis', 'SmallAreaLowGrayLevelEmphasis', 'ZoneEntropy', 'ZonePercentage', 'ZoneVariance'], 'ngtdm': ['Coarseness', 'Contrast', 'Busyness', 'Complexity', 'Strength'], 'gldm': ['SmallDependenceEmphasis', 'LargeDependenceEmphasis', 'GrayLevelNonUniformity', 'DependenceNonUniformity', 'DependenceNonUniformityNormalized', 'GrayLevelVariance', 'DependenceVariance', 'DependenceEntropy', 'LowGrayLevelEmphasis', 'HighGrayLevelEmphasis', 'SmallDependenceLowGrayLevelEmphasis', 'SmallDependenceHighGrayLevelEmphasis', 'LargeDependenceLowGrayLevelEmphasis', 'LargeDependenceHighGrayLevelEmphasis']}
+INFO:radiomics.batch: Current settings: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': [1, 1, 1], 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True, 'binWidth': 25, 'weightingNorm': None}
+INFO:radiomics.batch: (1/3) Processing Patient (Image: ./Data/Org/ZQ47 Image mediastinum.nrrd, Mask: ./Data/Org/ZQ47 Segmentation.seg.nrrd)
+INFO:radiomics.featureextractor: Calculating features with label: 1
+INFO:radiomics.featureextractor: Loading image and mask
+INFO:radiomics.imageoperations: Applying resampling from spacing [0.84765625 0.84765625 1.        ] and size [512 512 366] to spacing [1. 1. 1.] and size [37, 36, 35]
+INFO:radiomics.featureextractor: Computing shape
+WARNING:radiomics.shape: Feature Compactness1 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature Compactness2 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature SphericalDisproportion is deprecated, use with caution!
+INFO:radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+INFO:radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {'wavelet': 'rbio1.1', 'binWidth': 10}
+INFO:radiomics.featureextractor: Calculating features for original image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.batch: (2/3) Processing Patient (Image: ./Data/Org/ZQ74 Image mediastinum.nrrd, Mask: ./Data/Org/ZQ74 Segmentation.seg.nrrd)
+INFO:radiomics.featureextractor: Calculating features with label: 1
+INFO:radiomics.featureextractor: Loading image and mask
+INFO:radiomics.imageoperations: Applying resampling from spacing [0.64257812 0.64257812 0.7       ] and size [512 512 460] to spacing [1. 1. 1.] and size [29, 31, 23]
+INFO:radiomics.featureextractor: Computing shape
+WARNING:radiomics.shape: Feature Compactness1 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature Compactness2 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature SphericalDisproportion is deprecated, use with caution!
+INFO:radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+INFO:radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {'wavelet': 'rbio1.1', 'binWidth': 10}
+INFO:radiomics.featureextractor: Calculating features for original image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.batch: (3/3) Processing Patient (Image: ./Data/Org/ZQ239 Image mediastinum.nrrd, Mask: ./Data/Org/ZQ239 Segmentation.seg.nrrd)
+INFO:radiomics.featureextractor: Calculating features with label: 1
+INFO:radiomics.featureextractor: Loading image and mask
+INFO:radiomics.imageoperations: Applying resampling from spacing [0.7421875 0.7421875 1.       ] and size [512 512 336] to spacing [1. 1. 1.] and size [99, 107, 60]
+INFO:radiomics.featureextractor: Computing shape
+WARNING:radiomics.shape: Feature Compactness1 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature Compactness2 is deprecated, use with caution!
+WARNING:radiomics.shape: Feature SphericalDisproportion is deprecated, use with caution!
+INFO:radiomics.featureextractor: Adding image type "Original" with custom settings: {}
+INFO:radiomics.featureextractor: Adding image type "Wavelet" with custom settings: {'wavelet': 'rbio1.1', 'binWidth': 10}
+INFO:radiomics.featureextractor: Calculating features for original image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet LHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-LHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HLH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HLH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHL
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.imageoperations: Computing Wavelet HHH
+INFO:radiomics.featureextractor: Calculating features for wavelet-HHH image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Calculating features for wavelet-LLL image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.featureextractor: Computing gldm

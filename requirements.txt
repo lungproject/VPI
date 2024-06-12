@@ -1,0 +1,123 @@
+absl-py==1.2.0
+asttokens==2.2.1
+astunparse==1.6.3
+backcall==0.2.0
+beautifulsoup4==4.12.2
+cachetools==5.2.0
+certifi @ file:///C:/b/abs_36eb5mzhph/croot/certifi_1690232276943/work/certifi
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+charset-normalizer==2.1.1
+colorama==0.4.5
+comm==0.1.3
+contourpy==1.0.6
+cycler==0.11.0
+debugpy==1.6.7
+decorator==5.1.1
+dill==0.3.5.1
+docopt==0.6.2
+etils==0.8.0
+executing==1.2.0
+filelock @ file:///C:/b/abs_c7yrhs9uz2/croot/filelock_1672387617533/work
+flatbuffers==1.12
+fonttools==4.38.0
+gast==0.4.0
+gdown==4.7.1
+google-auth==2.11.0
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+googleapis-common-protos==1.56.4
+grpcio==1.48.1
+h5py==3.7.0
+idna==3.3
+importlib-metadata==4.12.0
+importlib-resources==5.9.0
+ipykernel==6.22.0
+ipython==8.12.0
+jedi==0.18.2
+Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
+joblib==1.1.0
+jupyter_client==8.2.0
+jupyter_core==5.3.0
+jupyterlab-pygments==0.2.2
+keras==2.9.0
+keras-cv==0.3.1
+Keras-Preprocessing==1.1.2
+kiwisolver==1.4.4
+libclang==14.0.6
+Markdown==3.4.1
+MarkupSafe @ file:///C:/ci/markupsafe_1654489871526/work
+matplotlib==3.6.2
+matplotlib-inline==0.1.6
+mistune==3.0.1
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+mpmath @ file:///C:/b/abs_7833jrbiox/croot/mpmath_1690848321154/work
+nbclient==0.8.0
+nbconvert==7.7.3
+nest-asyncio==1.5.6
+networkx @ file:///C:/b/abs_e6gi1go5op/croot/networkx_1690562046966/work
+nptyping==2.5.0
+numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
+oauthlib==3.2.1
+opt-einsum==3.3.0
+packaging==21.3
+pandas==1.5.2
+parso==0.8.3
+pickleshare==0.7.5
+Pillow==9.3.0
+platformdirs==3.3.0
+promise==2.3
+prompt-toolkit==3.0.38
+protobuf==3.19.4
+psutil==5.9.5
+pure-eval==0.2.2
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments==2.15.1
+pykwalify==1.8.0
+pynrrd==1.0.0
+pyparsing==3.0.9
+pyradiomics==0+unknown
+python-dateutil==2.8.2
+pytz==2022.7
+PyWavelets==1.4.1
+pywin32==306
+pyzmq==25.0.2
+requests==2.28.1
+requests-oauthlib==1.3.1
+rsa==4.9
+ruamel.yaml==0.17.32
+ruamel.yaml.clib==0.2.7
+scikit-learn==1.1.2
+scipy==1.9.1
+SimpleITK==2.3.0
+six==1.16.0
+sklearn==0.0
+soupsieve==2.4.1
+stack-data==0.6.2
+sympy @ file:///C:/b/abs_95fbf1z7n6/croot/sympy_1668202411612/work
+tensorboard==2.9.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow-datasets==4.6.0
+tensorflow-estimator==2.9.0
+tensorflow-gpu==2.9.0
+tensorflow-io-gcs-filesystem==0.27.0
+tensorflow-metadata==1.10.0
+termcolor==2.0.1
+threadpoolctl==3.1.0
+tinycss2==1.2.1
+toml==0.10.2
+torch @ file:///C:/b/abs_abjetg6_iu/croot/pytorch_1686932924616/work
+tornado==6.3.1
+tqdm==4.64.1
+traitlets==5.9.0
+typing_extensions @ file:///C:/b/abs_213vg2cd1l/croot/typing_extensions_1690297804941/work
+urllib3==1.26.12
+wcwidth==0.2.6
+Werkzeug==2.2.2
+wincertstore==0.2
+wrapt==1.14.1
+zipp==3.8.1

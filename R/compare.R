@@ -6,7 +6,6 @@ library(rmda)
 library(data.table)
 library(survival)
 library(survminer)
-setwd("E:/Code/PleuralInvasion/R")
 library(DTComPair)
 pttrain<-read.csv(file="training.csv",header = TRUE);
 pttrain[which(pttrain$operationtype==3),]$operationtype=2
